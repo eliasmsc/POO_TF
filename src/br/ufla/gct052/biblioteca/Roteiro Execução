@@ -1,34 +1,53 @@
-ROTEIRO DE EXECUÇÃO
+# Roteiro de Execução — Sistema de Biblioteca Universitária
 
-Sistema de Biblioteca Universitária
+## Como executar
 
-1. Execute a classe App.java.
+1. Execute a classe `App.java`.
 
-2. O sistema inicia realizando o cadastro dos usuários:
+2. O sistema inicia realizando automaticamente o cadastro dos usuários:
    - 1 Aluno;
    - 1 Professor;
    - 1 Servidor.
 
-3. Em seguida são exibidos, de forma polimórfica, o limite de empréstimos e o prazo de devolução de cada tipo de usuário.
+3. Em seguida, são exibidas as informações de cada tipo de usuário de forma polimórfica:
+   - Limite de empréstimos;
+   - Prazo para devolução.
+
+## Cadastro de dados
 
 4. O sistema realiza o cadastro de:
    - 3 livros;
    - 5 exemplares.
 
+## Testes de empréstimo
+
 5. É realizado um empréstimo válido para um dos usuários cadastrados.
 
-6. Em seguida é feita uma tentativa de empréstimo de um exemplar que já está emprestado, demonstrando o tratamento de exceções.
+6. Em seguida, é realizada uma tentativa de empréstimo de um exemplar que já está emprestado, demonstrando o tratamento de exceções.
 
-7. O sistema realiza empréstimos até que o usuário atinja seu limite e, em seguida, tenta efetuar um novo empréstimo, demonstrando a validação dessa regra de negócio.
+7. O sistema realiza novos empréstimos até que o usuário atinja seu limite permitido.
 
-8. É executado o teste da funcionalidade de renovação de empréstimo.
+8. Após atingir o limite, uma nova tentativa de empréstimo é realizada para validar a regra de negócio.
 
-9. O sistema realiza uma devolução válida e, logo após, tenta devolver novamente o mesmo empréstimo para demonstrar o tratamento de erro.
+## Renovação e devolução
 
-10. Ao final da execução são apresentados:
-    - quantidade de empréstimos ativos;
-    - histórico de empréstimos do usuário Lucas Oliveira;
-    - quantidade de exemplares disponíveis do livro "Java Como Programar".
+9. É executado o teste da funcionalidade de renovação de empréstimo.
 
-Todas as etapas são executadas automaticamente e seus resultados são exibidos no console, incluindo os casos de sucesso e as exceções esperadas.
+10. O sistema realiza uma devolução válida e, posteriormente, tenta devolver novamente o mesmo empréstimo para demonstrar o tratamento de erros.
 
+## Resultado da execução
+
+Ao final da execução, são apresentados no console:
+
+- Quantidade de empréstimos ativos;
+- Histórico de empréstimos do usuário **Lucas Oliveira**;
+- Quantidade de exemplares disponíveis do livro **"Java Como Programar"**.
+
+## Observação
+
+Todas as etapas são executadas automaticamente ao iniciar o sistema.
+
+Os resultados exibidos no console incluem:
+- Operações realizadas com sucesso;
+- Validações das regras de negócio;
+- Exceções esperadas durante os testes.
